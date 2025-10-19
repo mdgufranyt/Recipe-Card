@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Recipe Card - Chocolate Cake</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="recipe-card">
+        <h1 class="recipe-title">🍫 Chocolate Cake</h1>
+        <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=803"
+            alt="Chocolate Cake" class="recipe-image" />
+
+        <div class="info">
+            <p><strong>Prep Time:</strong> 45 mins</p>
+            <p><strong>Servings:</strong> 6</p>
+        </div>
+
+        <div class="buttons">
+            <button id="toggleIngredients">Show Ingredients</button>
+            <button id="toggleSteps">Show Steps</button>
+            <button id="startCooking">Start Cooking</button>
+        </div>
+
+        <div class="ingredients hidden">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 cups flour</li>
+                <li>1 cup sugar</li>
+                <li>1 cup cocoa powder</li>
+                <li>2 eggs</li>
+                <li>1 cup milk</li>
+                <li>1/2 cup butter</li>
+            </ul>
+        </div>
+
+        <div class="steps hidden">
+            <h2>Steps</h2>
+            <ol>
+                <li>Preheat the oven to 180°C (350°F).</li>
+                <li>Mix all dry ingredients together.</li>
+                <li>Add eggs, milk, and butter. Stir until smooth.</li>
+                <li>Pour the batter into a greased pan.</li>
+                <li>Bake for 30 minutes. Let it cool and serve!</li>
+            </ol>
+        </div>
+
+        <div class="progress-bar-container hidden">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
